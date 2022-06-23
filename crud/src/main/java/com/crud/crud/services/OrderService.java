@@ -20,7 +20,7 @@ public class OrderService {
         return repository.findAll();
     }
 
-    public Order findById(@PathVariable long id){
+    public Order findById(@PathVariable Long id){
         Optional<Order> obj = repository.findById(id);
         return obj.get();
     }
